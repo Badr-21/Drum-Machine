@@ -1,0 +1,68 @@
+.App {
+   width: 100vw;
+   height: 100vh;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#drum-machine {
+   width: 25rem;
+   height: 25rem;
+   padding: 1rem;
+   border-radius: 0.5rem;
+   background: rgb(34, 193, 195);
+   background: linear-gradient(90deg, rgba(34, 193, 195, 0.5) 0%, rgba(253, 187, 45, 0.5) 100%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 2rem;
+}
+
+#display {
+   width: 10rem;
+   height: 3rem;
+   background: rgb(164, 200, 215);
+   background: linear-gradient(
+      120deg,
+      rgba(164, 200, 215, 0.8435749299719888) 0%,
+      rgba(157, 206, 226, 0.8911939775910365) 100%
+   );
+   color: orangered;
+   font-weight: bold;
+   text-align: center;
+   border-radius: 0.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.drum-pad-container {
+   width: 20rem;
+   height: 20rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   gap: 1rem;
+}
+
+.drum-pad {
+   background: rgb(164, 200, 215);
+   background: linear-gradient(
+      120deg,
+      rgba(164, 200, 215, 0.8435749299719888) 0%,
+      rgba(157, 206, 226, 0.8911939775910365) 100%
+   );
+   border-radius: 0.5rem;
+   box-shadow: 0.1rem 0.1rem 0.1rem gray;
+   font-weight: bold;
+   color: orangered;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.drum-pad:hover {
+   cursor: pointer;
+}
