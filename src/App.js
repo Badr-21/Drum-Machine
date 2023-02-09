@@ -9,7 +9,6 @@ function App() {
       const drumPad = document.getElementById(id);
       setDisplay(drumPad.id);
       drumPad.firstElementChild.play();
-      console.log(drumPad);
    };
 
    useEffect(() => {
